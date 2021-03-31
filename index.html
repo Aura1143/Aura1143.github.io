@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>ToDo / Not ToDo List</title>
+  </head>
+  <body>
+    <h1>ToDo / Not ToDo List</h1>
+
+      <!-- ToDo & Not ToDo のラジオボタンを作成 -->
+      <form name="form1" id ="target">
+        <label>
+          <input type="radio" name="List" value="Yes"/>ToDo
+        </label>
+        <label>
+          <input type="radio" name="List" value="No"/>Not ToDo
+        </label>
+      </form>
+
+      <div id="section_1">
+        <br>
+        <label for="item">新規タスクの入力：</label>
+        <input type="text" name="item" id="item">
+        <button>追加</button>
+      </div>
+      <br>
+      <hr>
+
+      <!-- ToDo List (左寄せ) -->
+      <table style="float:left">
+        <thead>
+          <tr>
+            <th>＜ ToDo ＞</th>
+          </tr>
+        </thead>
+          <tbody  id="section_2">
+            <tr>
+              <td></td>
+            </tr>
+          </tbody>
+      </table>
+
+      <!-- Not ToDo List -->
+      <table class="table_2">
+        <thead>
+          <tr>
+            <th>＜ Not ToDo ＞</th>
+          </tr>
+        </thead>
+          <tbody  id="section_3">
+            <tr>
+              <td></td>
+            </tr>
+          </tbody>
+      </table>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
